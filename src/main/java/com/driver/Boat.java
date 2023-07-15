@@ -1,6 +1,6 @@
 package com.driver;
 
-public class Boat implements WaterVehicle {
+public  class Boat implements WaterVehicle{
    private String name ;
     private int Capacity;
 
@@ -28,6 +28,16 @@ public class Boat implements WaterVehicle {
     }
 
     public void setCapacity(int capacity) {
-        Capacity = capacity;
+        this.Capacity = capacity;
+    }
+
+    @Override
+    public String getVehicleName() {
+        return name;
+    }
+
+    @Override
+    public int getVehicleCapacity() {
+        return Capacity;
     }
 }
