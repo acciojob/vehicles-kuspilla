@@ -76,8 +76,8 @@ public class Car extends Vehicle {
         setType(type);
         setSeats(seats);
         setDoors(doors);
-        setManual(isManual);
-
+        this.isManual = isManual;
+        currentGear = 1;
 
     }
 

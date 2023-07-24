@@ -8,14 +8,14 @@ public  class Boat implements WaterVehicle{
         this.name= name;
         this.Capacity = Capacity;
     }
-    public Boat(){}
 
 
 
+ @Override
     public String getVehicleName() {
         return this.name;
     }
-
+@Override
 
     public int getVehicleCapacity() {
         return this.Capacity;
