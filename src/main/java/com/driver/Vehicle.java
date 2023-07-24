@@ -1,6 +1,12 @@
 package com.driver;
 
 public class Vehicle {
+
+
+    protected int currentDirection;
+    protected int currentSpeed;
+    private String name;
+
     public int getCurrentSpeed() {
         return currentSpeed;
     }
@@ -10,11 +16,6 @@ public class Vehicle {
     public int getCurrentDirection() {
         return currentDirection;
     }
-
-    protected int currentDirection;
-    protected int currentSpeed;
-    private String name;
-
     public Vehicle(String name) {
         this.name = name;
         this.currentDirection =0;
