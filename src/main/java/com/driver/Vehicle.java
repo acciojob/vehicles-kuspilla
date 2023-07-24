@@ -2,17 +2,14 @@ package com.driver;
 
 public class Vehicle {
 
-
-    protected int currentDirection;
-    protected int currentSpeed;
     private String name;
-
-
+    private int currentSpeed;
+    private int currentDirection;
 
     public Vehicle(String name) {
         this.name = name;
-        this.currentDirection =0;
         this.currentSpeed =0;
+        this.currentDirection =0;
     }
 
     public void steer(int direction){
@@ -28,19 +25,17 @@ public class Vehicle {
         System.out.println("move method called - The speed is changed to: " + currentSpeed + ", and the direction is changed to: " + currentDirection + " degrees");
     }
 
-
     public void stop(){
-        this.currentSpeed =0;
-
+        this.currentSpeed = 0;
         System.out.println("stop method called - The vehicle is stopped");
     }
 
-    public int getCurrentDirection() {
-        return currentDirection;
+    public String getName() {
+        return name;
     }
 
-    public void setCurrentDirection(int currentDirection) {
-        this.currentDirection = currentDirection;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getCurrentSpeed() {
@@ -51,11 +46,11 @@ public class Vehicle {
         this.currentSpeed = currentSpeed;
     }
 
-    public String getName() {
-        return name;
+    public int getCurrentDirection() {
+        return currentDirection;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setCurrentDirection(int currentDirection) {
+        this.currentDirection = currentDirection;
     }
 }

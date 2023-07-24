@@ -1,23 +1,21 @@
 package com.driver;
 
-public  class Boat implements WaterVehicle{
-   private String name ;
-    private int Capacity;
+public class Boat implements WaterVehicle{
+    String name;
+    int capacity;
 
-    public Boat( String name, int Capacity){
-        this.name= name;
-        this.Capacity = Capacity;
+    public Boat(String name, int capacity ){
+        this.name = name;
+        this.capacity = capacity;
     }
-
-
-
     @Override
+
     public String getVehicleName() {
         return this.name;
     }
-    @Override
 
+    @Override
     public int getVehicleCapacity() {
-        return this.Capacity;
+        return this.capacity;
     }
 }
