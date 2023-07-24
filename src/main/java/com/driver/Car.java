@@ -81,12 +81,12 @@ public class Car extends Vehicle {
 
     }
 
-     public Car(String name, boolean isManual){
+    public Car(String name, boolean isManual){
         super(name);
         setManual(isManual);
-     }
+    }
     public void changeGear(int newGear){
-    this.currentGear = newGear;
+        this.currentGear = newGear;
         System.out.println("changeGear method called - The gear is changed to: " + currentGear);
     }
 
